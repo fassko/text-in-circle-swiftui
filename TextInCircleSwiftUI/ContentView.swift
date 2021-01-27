@@ -17,19 +17,10 @@ struct ContentView: View {
       ZStack {
         Circle()
           .stroke(circleColor, lineWidth: 4)
-        
+
         Text("13")
       }
       .frame(width: 40, height: 40)
-      
-      // Overlay
-      Text("13")
-        .padding()
-        .overlay(
-          Circle()
-            .stroke(circleColor, lineWidth: 4)
-            .padding(6)
-        )
       
       // Background
       Text("13")
@@ -40,6 +31,15 @@ struct ContentView: View {
             .padding(6)
         )
       
+      // Overlay
+      Text("13")
+        .padding()
+        .overlay(
+          Circle()
+            .stroke(circleColor, lineWidth: 4)
+            .padding(6)
+        )
+
       // Fill circle usig cliped shape
       Text("13")
         .padding()
